@@ -7,28 +7,26 @@ import org.junit.Rule;
 import org.junit.Test;
 
 public class ConcatCompressorTest {
+    ConcatCompressor compressor = new ConcatCompressor();
     
     @Rule
     public RepeatRule repeatRule = new RepeatRule();
     
     @Test
     public void itShouldReturnInputStringIfCompressedOneIsLonger() {
-        ConcatCompressor compressor = new ConcatCompressor();
         String compressedString = compressor.compress("abcd");
         assertEquals(compressedString, "abcd");
     }
     
     @Test
     public void itShouldReturnInputStringIfCompressedOneIsTheSameLength() {
-        ConcatCompressor compressor = new ConcatCompressor();
         String compressedString = compressor.compress("aabbccddde");
         assertEquals(compressedString, "aabbccddde");
     }
     
     @Test
-    @Repeat(times = 50000000)
+    @Repeat(times = 50_000_000)
     public void itShouldCompressInputString() {
-        ConcatCompressor compressor = new ConcatCompressor();
         String compressedString = compressor.compress(
             "aaaaaaabbbcddrrrggggggooooooooooYYYYYYYYqqqqqrwwwwwwwSSSSSS"
         );
