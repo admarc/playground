@@ -13,7 +13,7 @@ public class MatrixRotator {
     public void rotate(int degrees){
         int[] allowedDegrees = new int[]{90, 180, 270};
         if(Arrays.binarySearch(allowedDegrees, degrees) < 0) {
-            throw new IllegalArgumentException("The only possible values for degress are: " + 
+            throw new IllegalArgumentException("The only possible values for degress are: " +
                     Arrays.toString(allowedDegrees)
             );
         }

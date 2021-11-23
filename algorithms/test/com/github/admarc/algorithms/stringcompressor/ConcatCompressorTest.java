@@ -2,9 +2,10 @@ package com.github.admarc.algorithms.stringcompressor;
 
 import com.github.admarc.algorithms.Repeat;
 import com.github.admarc.algorithms.RepeatRule;
-import static org.junit.Assert.assertEquals;
 import org.junit.Rule;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ConcatCompressorTest {
     ConcatCompressor compressor = new ConcatCompressor();

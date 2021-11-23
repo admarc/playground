@@ -3,7 +3,6 @@ package com.github.admarc.algorithms.permutationchecker;
 import com.github.admarc.algorithms.Repeat;
 import com.github.admarc.algorithms.RepeatRule;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
